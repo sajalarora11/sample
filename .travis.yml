@@ -6,6 +6,9 @@ services:
 before_install:
   - docker build -t sazz/sample .
 
+script:
+  - docker run -t sazz/sample
+
 deploy:
   provider; 'elasticbeanstalk'
   region: 'us-east-2'
