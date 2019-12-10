@@ -5,7 +5,6 @@ services:
 
 before_install:
   - docker build -t sazz/sample -f Dockerfile.dev .
-  - docker run sazz/sample npm run test -- --coverage
 
 script:
   - docker run sazz/sample npm run build
