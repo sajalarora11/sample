@@ -4,8 +4,8 @@ services:
 before_install:
   - docker build -t sazz/sample .
 deploy:
-  access_key_id: $AWS_ACCESS_KEY
-  app: "sample-dev"
+  access_key_id: "$AWS_ACCESS_KEY"
+  application: "sample-dev"
   bucket_name: "elasticbeanstalk-us-east-2-278338191187"
   bucket_path: sample
   env: "SampleDev-env"
